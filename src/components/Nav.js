@@ -30,7 +30,7 @@ export default function Nav() {
               setActive3("passive");
             }}
           >
-            News
+            Appointment
           </p>
         </Link>
         <Link to="/map">
@@ -42,7 +42,7 @@ export default function Nav() {
               setActive3("active");
             }}
           >
-            Contpct
+            Our Location
           </p>
         </Link>
       </div>

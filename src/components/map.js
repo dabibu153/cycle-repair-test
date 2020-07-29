@@ -1,21 +1,11 @@
-import React from "react";
-import { Map, GoogleApiWrapper } from "google-map-react";
+import React, { useState, useEffect } from "react";
 
 function Location() {
-  const mapStyles = {
-    width: "100%",
-    height: "100%",
-  };
   return (
     <div>
-      <Map
-        zoom={8}
-        style={mapStyles}
-        initialCenter={{ lat: 47.444, lng: -122.176 }}
-      />
+      <h1> location test</h1>
+      <img src="http://apis.mapmyindia.com/advancedmaps/v1/fsvp5d7tsf1rzfb7krh1vopr6m7m7r6x/still_image?center=28.595939499830784,77.22556114196777&zoom=18&size=800x480&ssf=1&markers=28.595939,77.225561"></img>
     </div>
   );
 }
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyCPd9kPF9OS2gIPNRs6JW3zKtSxOvpLZRk",
-})(Location);
+export default Location;
